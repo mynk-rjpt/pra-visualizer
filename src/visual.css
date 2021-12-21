@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Petemoss&family=Roboto+Mono&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Petemoss&family=Roboto+Mono&family=Ubuntu+Mono&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter:wght@300&family=Petemoss&family=Roboto+Mono&family=Ubuntu+Mono&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+
+
+.visualization__algorithms{
+    display:flex;
+    flex-direction:column;
+    flex:0.65;
+    overflow-y:scroll;
+    overflow-x:scroll;
+}
+
+.visualization__algorithms li{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color:#4285F4;
+    font-weight:bold;
+}
+
+.visualization__algorithms li:hover{
+    color: gray;
+}
+
+.extra { 
+    display: none;
+}
+
+/* .visualization__algorithms li:hover{
+    display: inline-block;
+} */
+
+.visualization__algorithms::-webkit-scrollbar{
+    display:none;
+}
+
+.tablemy{
+    background-color:#990f4b;
+    border: 1px solid black;
+    border-radius:4px;
+    font-weight:bold;
+
+    /* border-collapse: collapse; */
+}
+.tablemyy{
+    /* border-bottom:1px solid black;
+    border-left:1px solid black;
+    border-right:1px solid black; */
+    /* box-shadow:2px 2px 2px black; */
+    border-radius:3px;
+    background:#FFFEF7;
+}
+
+.tablemy__img1{
+    background:#03C04A;
+    text-align:center;
+    color:white;
+}
+.tablemy__img2{
+    background:#FF2E2E;
+    text-align:center;
+    color:white;
+}
+
+/* tr{
+    padding: 5px;
+    text-align: center;
+} */
+
+td{
+    padding:10px;
+    text-align:center;
+    /* animation-name:td-animation;
+    animation-timing-function:linear;
+    animation-duration:2s; */
+}
+.tablemyyy{
+    color:white;
+    background-color:#990f4b;
+    border-radius:4px;
+}
+
+/* tr:nth-child(even) {background-color:cadetblue;} */
+tr:not(:first-child){
+    opacity:0;
+    /* display:none; */
+    animation-name:tr-animation;
+    animation-timing-function:linear;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tr-animation{
+    0% {opacity:0}
+    25% {opacity:0.2}
+    50% {opacity:0.3}
+    75% {opacity:0.4}
+    100% {opacity:1}
+}
+
+.initial__heading{
+    margin-left:8vw;
+    margin-top:30vh;
+    animation-name:hd_anim;
+    animation-timing-function:linear;
+    animation-duration:3s;
+}
+
+@keyframes hd_anim{
+    0% {margin-top:10%}
+    25% {margin-top:16%}
+    50% {margin-top:22%}
+    75% {margin-top:25%}
+    100% {margin-top:30%}
+}
+
+.initial__heading>h3{
+    font-size:20px;
+    font-weight:bold;
+    animation-name:heading_animation;
+    animation-iteration-count:infinite;
+    animation-duration:3s;
+    animation-timing-function:linear;
+    color:blue;
+}
+
+@keyframes heading_animation{
+    0% {color:blue}
+    25% {color:black}
+    50% {color:blue}
+    75% {color:black}
+    100% {color:blue}
+}
+
+.initial__heading>h4>a{
+    color:blue;
+}
+
+.table__summary{
+    border:1px solid black;
+    border-radius:3px;
+    /* padding:3px; */
+    display:flex;
+    flex-direction:column;
+    /* align-items:center; */
+    justify-content: center;
+    background-color:white;
+    width:40vw;
+    margin:0 auto;
+    animation-name:report-animation;
+    /* animation-duration: 3s; */
+    animation-timing-function: linear;
+    animation-fill-mode: forward;
+    margin-bottom:5px;
+}
+.table__summary>h2{
+    border:1px solid black;
+    text-align:center;
+    background-color:rgb(36, 32, 32);
+    /* margin:5px; */
+    color:white;
+    border-radius:3px;
+    padding:3px;
+    border-top: 0vm;
+}
+.table__summary>li{
+    margin-left:3vw;
+}
+
+/* @keyframes report-animation {
+    0% {margin-top:100%}
+    25% {margin-top:80%}
+    50% {margin-top:20%}
+    75% {margin-top:10%}
+    100% {margin-top:0%}
+} */
+
+@keyframes report-animation {
+    from {margin-top:100%}
+    to {margin-top:0%}
+    
+}
+
+.list__div{
+    /* margin:15px; */
+    padding:15px;
+    margin:0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .table__summary {
+      /* background-color: lightblue; */
+      width:100%;
+    }
+  }
+
+.algo__desc{
+    border:1px solid black;
+    border-radius:4px;
+    /* padding:3px; */
+    margin:0 auto;
+    margin-bottom:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.algoo__head{
+    text-align:center;
+    background-color:black;
+    color:white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Inter:wght@300&family=Petemoss&family=Roboto+Mono&family=Ubuntu+Mono&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+.algo__para{
+    padding:15px;
+    background-color:#FFFEF7;
+    /* font-style:oblique; */
+    /* font-family: 'Ubuntu Mono', monospace; */
+    font-family: 'Inconsolata', monospace;
+}
+
+
+#victim__page{
+    background-color:purple;
+    color:white;
+}
+
+@media only screen and (max-width: 600px) {
+    .initial__heading{
+        margin-top:18vh;
+    }
+}
